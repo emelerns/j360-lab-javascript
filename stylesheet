@@ -1,0 +1,32 @@
+/*css stylesheet*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300);
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+img {
+  margin-top: 50px;
+  margin-left: 400px;
+}
+.question {
+margin-left: 400px;
+padding-top: 20px;
+}
+button {
+background-color: #b35900;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+p {
+  margin-left: 400px;
+  color: #663300;
+}
+h2 {
+  color: #663300;
+}
