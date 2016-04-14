@@ -1,23 +1,24 @@
+<!DOCTYPE html>
 <html>
-    <meta> </meta>
-    <style>
+  <head>
+    <meta charset=UTF-8 />
+    <meta content="HTML, CSS, JavaScript" name=coffeequiz />
+    <title> Coffee Quiz </title>
+    <style type=text/CSS>
     @import url(https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300);
     body {
       font-family: "Open Sans Condensed", sans-serif;
     }
     img {
-      float: center;
       margin-top: 50px;
       margin-left: 400px;
-      width: 500px;
-      height: 250px;
     }
     .question {
     margin-left: 400px;
     padding-top: 20px;
 
 }
-    .button {
+    button {
     background-color: #b35900;
     border: none;
     color: white;
@@ -38,51 +39,73 @@
     }
     </style>
 <body>
-    <img src="j360-lab-three/coffee-dna_1024.jpeg"/>
+    <img src="coffee-dna_1024.jpg" alt="Coffee Logo" width="500" height="250" />
   <p> How well do you know your morning cup of Joe? Take this quiz to measure up your coffee knowledge.</p>
+  <script type="text/javascript">
+function respondCorrect1() {
+    document.getElementById("a1").innerHTML = "Correct!"}
+function respondIncorrect1() {
+  document.getElementsByClassName("wrong answer1").innerHTML = "Incorrect."}
+  </script>
 <div class=question>
   <p>
   <h2> What coffee roast contains the most caffeine? </h2>
-  <button class="button" id="button 1">Dark</button>
-  <button class="button" id="button 2">Light</button>
-  <button class="button" id="button 3">Medium</button>
-  <button class="button" id="button 4">Medium-dark</button>
+  <button onclick="respondIncorrect1()" class="wrong answer1" >Dark</button>
+  <button onclick="respondCorrect1()" class="correct answer" id="a1">Light</button>
+  <button onclick="respondIncorrect1()" class="wrong answer1" >Medium</button>
+  <button onclick="respondIncorrect1()" class="wrong answer1">Medium-dark</button>
   </p>
 </div>
+<script type="text/javascript">
+function respondCorrect2() {
+    document.getElementById("a2").innerHTML = "Correct!" }
+</script>
 <div class=question>
   <p>
   <h2> What drink is one part espresso, two parts milk, one part foam? </h2>
-  <button class="button" id="button 5">Cappuccino</button>
-  <button class="button" id="button 6">Macchiato</button>
-  <button class="button" id="button 7">Americano</button>
-  <button class="button" id="button 8">Latte</button>
+  <button onclick="respondIncorrect()" >Cappuccino</button>
+  <button onclick="respondIncorrect()" >Macchiato</button>
+  <button onclick="respondIncorrect()" >Americano</button>
+  <button onclick="respondCorrect2()" id="a2">Latte</button>
   </p>
 </div>
+<script type="text/javascript">
+function respondCorrect3() {
+    document.getElementById("a3").innerHTML = "Correct!" }
+</script>
 <div class=question>
   <p>
   <h2> How should you grind beans for a regular coffee maker?</h2>
-  <button class="button" id="button 9">Fine</button>
-  <button class="button" id="button 10">Coarse</button>
-  <button class="button" id="button 11">Powder</button>
-  <button class="button" id="button 12">Whole Bean</button>
+  <button onclick="respondCorrect3()" id="a3" >Fine</button>
+  <button onclick="respondIncorrect()" >Coarse</button>
+  <button onclick="respondIncorrect()" >Powder</button>
+  <button onclick="respondIncorrect()" >Whole Bean</button>
   </p>
 </div>
+<script type="text/javascript">
+function respondCorrect4() {
+    document.getElementById("a4").innerHTML = "Correct!" }
+</script>
 <div class=question>
   <p>
   <h2> What is the proper temperature for water to brew coffee? </h2>
-  <button class="button" id="button 13">100 F </button>
-  <button class="button" id="button 14">50 F</button>
-  <button class="button" id="button 15">195 F</button>
-  <button class="button" id="button 16">250 F</button>
+  <button onclick="respondIncorrect()" >100 F </button>
+  <button onclick="respondIncorrect()" >50 F</button>
+  <button onclick="respondCorrect4()" id="a4"> 195 F</button>
+  <button onclick="respondIncorrect()" >250 F</button>
   </p>
 </div>
+<script type="text/javascript">
+function respondCorrect5() {
+    document.getElementById("a5").innerHTML = "Correct!" }
+</script>
 <div class=question>
   <p>
   <h2> What nation does not grow coffee? </h2>
-  <button class="button" id="button 17">Jamaica</button>
-  <button class="button" id="button 18">Vietnam</button>
-  <button class="button" id="button 19">Canada</button>
-  <button class="button" id="button 20">Ethiopia</button>
+  <button onclick="respondIncorrect()" >Jamaica</button>
+  <button onclick="respondIncorrect()" >Vietnam</button>
+  <button onclick="respondCorrect5()" id="a5" >Canada</button>
+  <button onclick="respondIncorrect()" >Ethiopia</button>
   </p>
 </div>
 </body>
