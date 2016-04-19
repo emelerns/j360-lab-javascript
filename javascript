@@ -51,23 +51,17 @@
     }
     return buttonList;
   }
-
-  function choose() {
-    selections[question] = +$('input[name="answer"]:checked').val();
-  }
-
-    function displayScore() {
-    var score = $('<p>',{id: 'question'});
-
-    var numCorrect = 0;
-    for (var i = 0; i < selections.length; i++) {
-      if (selections[i] === questions[i].correctAnswer) {
-        numCorrect++;
+    function getScore () {
+      var score = 0;
+      var numQestions = 5;
+      for (va i = 0; i < numQuestions; i++) {
+        if (userInput[i] == correctAnswer[i]) {
+          score +=1;
+        } else {
+          score +=0;
+        }
+        }
+        return score alert("You got" + .correctAnswer + "correct. Celebrate with some coffee!");
       }
     }
-
-    score.alert('You got ' + numCorrect + ' questions out of ' +
-                 questions.length + 'correct. Enjoy some coffee!');
-    return score;
-  }
 })();
